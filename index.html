@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <!-- scroll-to-top-btn -->
+    <div class="scrollTopBtn" onclick="scrollToTop()" >
+      <button type="button" class="btn btn-warning">
+        <i class="fas fa-long-arrow-alt-up"></i>
+      </button>
+    </div>
+    <!-- -----------header------------ -->
+    <header>
+        <div class="top-title bg-dark text-center font-weight-bold text-white">
+          <div class="row mx-0 py-0">
+            <div  class="col-md-2 socials">
+              <a href="#"><i class="fas fa-envelope d-none d-md-inline-block"></i></a>
+              <a href="#"><i class="fas fa-phone-alt d-none d-md-inline-block"></i></a>
+            </div>
+            <div class="col-md-8 col-sm-12">
+              <h2>الهيئة العامة للأرصاد الجوية المصرية</h2>
+            </div>
+            <div class="col-md-2 socials">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fas fa-envelope d-md-none"></i></a>
+              <a href="#"><i class="fas fa-phone-alt d-md-none"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="nav-bar">
+            <nav class="navbar navbar-expand-lg navbar-light py-0 my-0">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse py-0 my-0" id="navbarSupportedContent">
+                  <ul class="navbar-nav text-right ml-auto py-0 my-0">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#weather">الطقس ألآن</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        التنبؤات الجوية
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#db">النشرة الجوية</a>
+                        <a class="dropdown-item" href="#table">جدول الستة أيام</a>
+                        <div class="dropdown-divider">تنبؤ المحافظات</div>
+                        <a class="dropdown-item" href="#">تنبؤ المحافظات</a>
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        الإدارات المركزية
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">الإدارة المركزية لشؤن مجلس الإدارة</a>
+                        <a class="dropdown-item" href="#">الإدارة المركزية للتحاليل والتنبؤات</a>
+                        <a class="dropdown-item" href="#">الإدرة المركزية للتدريب</a>
+                        <a class="dropdown-item" href="#">الإدارة المركزية للبحث العلمي</a>
+                        <a class="dropdown-item" href="#">الإدارة المركزية للمحطات والأجهزة</a>
+                        <a class="dropdown-item" href="#">الإدارة المركزية للتنظيم والإدارة</a>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#about-us">عن الهيئة</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">خدامتنا</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#contact">تواصل معنا</a>
+                    </li>
+                  </ul>
+                </div>
+                <a class="navbar-brand" href="#">
+                  <img src="images/logo.png" alt="">
+                </a>
+              </nav>
+        </div>
+        <div class="slider">
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner mh-100">
+                  <div class="carousel-item active">
+                    <img src="images/1.jpg" class="d-block w-100" alt="images/1.jpg">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/5.jpg" class="d-block w-100" alt="images/2.jpg">
+                    <div class="carousel-caption d-none d-md-block">
+                      <p>تمتلك الهيئة العامة للأرصاد الجوية أكثر من 110 محطة رصد جوي موزعة بشكل شبكي منظم على مستوى الجمهورية</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/train.jpg" class="d-block w-100" alt="images/train.jpg">
+                    <div class="carousel-caption d-none d-md-block">
+                      <p>تضم الهيئة العامة للأرصاد الجوية مركزاً إقليمياً للتدريب تابع للمنظمة العالمية للأرصاد الجوية وينظم دورات تدريبة يتوافد عليها المتدربون من جميع أنحاء العالم </p>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+        </div>
+    </header>
+
+<!-- -----------------weather now------------------ -->
+<section id="weather" class="weather my-5 bg-light">
+  <div class="container">
+    <h1 class="text-right pt-5">الطقس ألآن</h1>
+    <div class="border"></div>
+
+    <div class="row">
+      <div class="col-xs-12 col-md-7 readable p-4 my-md-0 my-xs-3 rounded bg-dark font-weight-bold">
+        <div class="row">
+          <div class="col-12 location text-center p-2 font-weight-bold text-light">
+            <div class="h3 mb-0">
+              <span class="city"></span>
+              <span>, </span>
+              <span class="country"></span>
+              <span class="map">
+                <i class="fas fa-map-marker-alt"></i>
+              </span>
+            </div>
+          </div>
+          <div class="col-12 icon-desc text-center text-light">
+            <div class=" icon">icon</div>
+            <div class=" desc">desc</div>
+          </div>
+          <div class="col-12 actual-weather weather-data text-light text-center">
+            <div class="row temp bg-primary p-2 my-2 text-center">
+              <div class="col-8 weather-element">
+                درجة الحرارة
+              </div>
+              <div class="col-1 weather-element-unit">
+                <sup>o</sup>c
+              </div>
+              <div class="col-1 weather-element-data">
+                39
+              </div>
+            </div>
+            <div class="row sens-temp bg-secondary p-2 my-2">
+              <div class="col-8 weather-element">
+                درجة الحرارة المحسوسة
+              </div>
+              <div class="col-1 weather-element-unit">
+                <sup>o</sup>c
+              </div>
+              <div class="col-1 weather-element-data">
+                40
+              </div>
+            </div>
+            <div class="row humidty bg-primary p-2 my-2">
+              <div class="col-8 weather-element">
+                الرطوبة النسبية
+              </div>
+              <div class="col-1 weather-element-unit">
+                %
+              </div>
+              <div class="col-1 weather-element-data">
+                40
+              </div>
+            </div>
+            <div class="row wind-spead bg-secondary p-2 my-2">
+              <div class="col-8 weather-element">
+                سرعة الرياح
+              </div>
+              <div class="col-1 weather-element-data">
+                15
+              </div>
+              <div class="col-2 weather-element-unit">
+                م/ث
+              </div>
+            </div>
+            <div class="row wind-dir bg-primary p-2 my-2">
+              <div class="col-8 weather-element">
+                اتجاه الرياح
+              </div>
+              <div class="col-4 weather-element-data">
+                140
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-md-5 vedio">
+        <div class="embed-responsive embed-responsive-4by3 h-50">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/DDJ6oGEL3go" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>      
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================النشرة=========================== -->
+<section id="db" class="">
+  <div class="container p-4">
+
+    <div class="db-header">
+      <div class="row pt-0 my-0">
+        <div class="col-5">
+          <div class="col-12 text-right">
+            <p>الهيئة العامة للأرصاد الجوية المصرية</p>
+            <p>الإدارة العامة للتحاليل - مركز التحاليل الرئيسي</p>
+          </div>
+        </div>
+        <div class="col-2 text-center">
+          <img src="images/logo.png" alt="" class="w-100">
+        </div>
+        <div class="col-5 font-weight-bold text-center">
+          <p>EMA</p>
+          <p>RSMC - CAIRO</p>
+        </div>
+      </div>
+      <div class="border mb-3"></div>
+
+      <div class="text-center mx-auto">
+        <h1 >النشرة الجوية</h1>
+        <h3 class="py-3 px-2 my-3 text-center bg-primary day ">
+          الخميس 12 نوفمبر 2020
+        </h2>
+      </div>
+    </div>
+
+    <div class="db-body text-right">
+      <!-- ------------------صباحا ومساء------------- -->
+      <div class="row">
+        <div class="col-md-6">
+          <h2 class="py-3 px-3 text-center border rounded-pill">طقس <span>الخميس</span> (نهاراً)</h2>
+          <div class="content text-right font-weight-bold border py-2 px-3">
+            <p>- طقس لطيف على القاهرة والوجه البحري والرياح معتدلة</p>
+            <p>- طقس لطيف على السواحل الشمالية والرياح معتدلة</p> 
+            <p>- طقس معتدل على جنوب سيناء والرياح تنشط على البحر الأحمر</p>
+            <p>- طقس معتدل على شمال وجنوب الصعيد والرياح معتدلة.
+            </p>  
+          </div>      
+        </div>
+        
+        <div class="col-md-6">
+          <h2 class="text-center py-3 px-3 text-center border rounded-pill">طقس <span>الخميس</span> (ليلاً)</h2>
+          <div class="content text-right font-weight-bold border py-2 px-3">
+            <p>-  بارد على القاهرة والوجه البحري  </p>
+            <p>-  لطيف على السواحل الشمالية  </p> 
+            <p>-  معتدل على جنوب سيناء</p>
+            <p>-  بارد على شمال وجنوب الصعيد .
+            </p>  
+          </div>      
+        </div>
+      </div>
+
+      <!-- ---------------------الظواهر والوصف الفني--------------------- -->
+      <div class="row my-5 font-weight-bold">
+        <div class="col-md-6">
+          <h2 class="py-3 px-3 text-center border rounded-pill">الظواهر الجويــــة</h2>
+          <div class="content text-right border py-2 px-3">
+            <p>- أمطار خفيفة (40% تقريباً) على بعض المناطق من السواحل الشمالية الغربية (السلوم - مطروح - اسكنرية)</p>
+            <p></p> 
+            <p></p>
+          </div>      
+        </div>
+        
+        <div class="col-md-6">
+          <h2 class="py-3 px-3 text-center border rounded-pill">الوصف الفني لخرائط الطقس</h2>
+          <div class="content text-right border  py-2 px-3">
+            <p>يتأثر شمال البلاد بمنخفض جوي على البحر المتوسط؛ بينما يتأثر جنوب البلاد بامتداد منخفض السودان الموسمي</p>
+          </div>      
+        </div>
+      </div>
+
+      <!-- ------------------------ درجات الحرارة--------------------------- -->
+
+      <div class="row ">
+        <div class="text-center mx-auto btn pre-temp">
+          <h3 class="text-center py-3 px-5 my-3 rounded-pill">درجات الحرارة المتوقعة</h3>
+        </div>
+      </div> 
+
+      <!-- -------------------Temp--------------------------- -->
+
+      <div class="row temperature text-right">
+
+
+        <div class="col-md-4 temp-head">
+          <div class="row">
+            <h4>المدينة</h4>
+            <h4>عظمى</h4>
+            <h4>صغرى</h4>
+          </div>
+        </div>
+        <div class="col-md-4 d-none d-md-block temp-head">
+          <div class="row">
+            <h4>المدينة</h4>
+            <h4>عظمى</h4>
+            <h4>صغرى</h4>
+          </div>
+        </div>
+        <div class="col-md-4 d-none d-md-block temp-head">
+          <div class="row">
+            <h4>المدينة</h4>
+            <h4>عظمى</h4>
+            <h4>صغرى</h4>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="row">
+            <h6>القاهرة</h6>
+            <h6>34</h6>
+            <h6>20</h6>
+          </div>
+          <div class="row">
+            <h6>الإسكندرية</h6>
+            <h6>34</h6>
+            <h6>20</h6>
+          </div>
+          <div class="row">
+            <h6>وادي النطرون</h6>
+            <h6>34</h6>
+            <h6>20</h6>
+          </div>
+          <div class="row">
+            <h6>طنطا</h6>
+            <h6>34</h6>
+            <h6>20</h6>
+          </div>
+          <div class="row">
+            <h6>شبين الكوم</h6>
+            <h6>34</h6>
+            <h6>20</h6>
+          </div>
+          <div class="row">
+            <h6>دمنهور</h6>
+            <h6>34</h6>
+            <h6>20</h6>
+          </div>
+          <div class="row">
+            <h6>بلطيم</h6>
+            <h6>34</h6>
+            <h6>20</h6>
+          </div>
+          <div class="row">
+            <h6>مطروح</h6>
+            <h6>34</h6>
+            <h6>20</h6>
+          </div>
+          <div class="row">
+            <h6>السلوم</h6>
+            <h6>34</h6>
+            <h6>20</h6>
+          </div>
+          <div class="row">
+            <h6>سيوة</h6>
+            <h6>34</h6>
+            <h6>20</h6>
+          </div>
+          <div class="row">
+            <h6>بورسعيد</h6>
+            <h6>34</h6>
+            <h6>20</h6>
+          </div>
+          <div class="row">
+            <h6>دمياط</h6>
+            <h6>34</h6>
+            <h6>20</h6>
+          </div>
+          <div class="row">
+            <h6>الزقازيق</h6>
+            <h6>34</h6>
+            <h6>20</h6>
+          </div>
+          <div class="row">
+            <h6>المنصورة</h6>
+            <h6>34</h6>
+            <h6>20</h6>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="row">
+            <h6>الإسماعلية</h6>
+            <h6>34</h6>
+            <h6>20</h6>
+          </div>
+          <div class="row">
+            <h6>السويس</h6>
+            <h6>34</h6>
+            <h6>20</h6>
+          </div>
+          <div class="row">
+            <h6>العريش</h6>
+            <h6>34</h6>
+            <h6>20</h6>
+          </div>
+          <div class="row">
+            <h6>رفح</h6>
+            <h6>34</h6>
+            <h6>20</h6>
+          </div>
+          <div class="row">
+            <h6>راس سدر</h6>
+            <h6>34</h6>
+            <h6>20</h6>
+          </div>
+          <div class="row">
+            <h6>نخل</h6>
+            <h6>34</h6>
+            <h6>20</h6>
+          </div>
+          <div class="row">
+            <h6>نوبيع</h6>
+            <h6>34</h6>
+            <h6>20</h6>
+          </div>
+          <div class="row">
+            <h6>طابا</h6>
+            <h6>34</h6>
+            <h6>20</h6>
+          </div>
+          <div class="row">
+            <h6>كاترين</h6>
+            <h6>34</h6>
+            <h6>20</h6>
+          </div>
+          <div class="row">
+            <h6>الطور</h6>
+            <h6>34</h6>
+            <h6>20</h6>
+          </div>
+          <div class="row">
+            <h6>شرم الشيخ</h6>
+            <h6>34</h6>
+            <h6>20</h6>
+          </div>
+          <div class="row">
+            <h6>الغردقة</h6>
+            <h6>34</h6>
+            <h6>20</h6>
+          </div>
+          <div class="row">
+            <h6>مرسى علم</h6>
+            <h6>34</h6>
+            <h6>20</h6>
+          </div>
+          <div class="row">
+            <h6>الفيوم</h6>
+            <h6>34</h6>
+            <h6>20</h6>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="row">
+            <h6>بني سويف</h6>
+            <h6>34</h6>
+            <h6>20</h6>
+          </div>
+          <div class="row">
+            <h6>المنيا</h6>
+            <h6>34</h6>
+            <h6>20</h6>
+          </div>
+          <div class="row">
+            <h6>أسيوط</h6>
+            <h6>34</h6>
+            <h6>20</h6>
+          </div>
+          <div class="row">
+            <h6>سوهاج</h6>
+            <h6>34</h6>
+            <h6>20</h6>
+          </div>
+          <div class="row">
+            <h6>قنا</h6>
+            <h6>34</h6>
+            <h6>20</h6>
+          </div>
+          <div class="row">
+            <h6>الأقصر</h6>
+            <h6>34</h6>
+            <h6>20</h6>
+          </div>
+          <div class="row">
+            <h6>أسوان</h6>
+            <h6>34</h6>
+            <h6>20</h6>
+          </div>
+          <div class="row">
+            <h6>ادفو</h6>
+            <h6>34</h6>
+            <h6>20</h6>
+          </div>
+          <div class="row">
+            <h6>أبو سمبل</h6>
+            <h6>34</h6>
+            <h6>20</h6>
+          </div>
+          <div class="row">
+            <h6>الوادي الجديد</h6>
+            <h6>34</h6>
+            <h6>20</h6>
+          </div>
+          <div class="row">
+            <h6>شلاتين</h6>
+            <h6>34</h6>
+            <h6>20</h6>
+          </div>
+          <div class="row">
+            <h6>أبو رماد</h6>
+            <h6>34</h6>
+            <h6>20</h6>
+          </div>
+          <div class="row">
+            <h6>حلايب</h6>
+            <h6>34</h6>
+            <h6>20</h6>
+          </div>
+          <div class="row">
+            <h6>راس حدربة</h6>
+            <h6>34</h6>
+            <h6>20</h6>
+          </div>
+        </div> 
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===============table--------- -->
+<section id="table" class="table py-5 my-5">
+  <div class="container-fluid">
+    <h1 class="text-right">تنبؤ الستة أيام</h1>
+    <div class="title-border"></div>
+    <p class="d-none text-right">هنا يتم تقسيم  خريطة الجمورية إلى 7 مناطق رئيسية؛ حيث تكون المدن الواقعة داخل كل منطقة متجانسة وتتشابه إلى حد كبير في صفاتها المناخية وكذلك في أحوال الطقس كالتالي:-</p>
+    
+    <select class="regions-list p-2 bg-secondary text-light d-block font-weight-bold" >
+      <option value="1" selected>القاهرة الكبرى</option>
+      <option value="2">الوجه البحري</option>
+      <option value="3">السواحل الشمالية الغربية</option>
+      <option value="4">السواحل الشمالية الشرقية</option>
+      <option value="5">جنوب سيناء وسلاسل جبال البحر الأحمر</option>
+      <option value="6">شمال الصعيد</option>
+      <option value="7">جنوب الصعيد</option>
+    </select>
+
+    <div class="displayed-rigion">
+      <h1 class="col-12 py-4 text-center font-weight-bold">
+        القاهـــــــــــــــرة الكبرى
+      </h1>
+
+        <div class="row mb-2 d-none d-md-flex bg-light text-center border table_header">
+          <div class="col-2 col-md-3 font-weight-bold text-center border-left">
+            <h3>اليـــوم</h3>
+          </div>
+
+          <div class="col-10 col-sm-9">
+            <div class="row">
+              <div class="col-6 col-md-12">
+                <div class="row bg-primary text-white font-weight-bold">
+                  <div class="temp col-12 col-md-2 py-2 border">
+                    <div class="row">
+                      <div class="col-md-12 col-6">
+                        درجة الحرارة (c<sup> ْ</sup>)
+                      </div>
+                      <div class="col-md-12 col-6">
+                        <div class="row">
+                          <div class="max col-md-6 col-xs-12 py-1">عظمى</div>
+                          <div class="min col-md-6 col-xs-12 py-1">صغرى</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="humd col-12 col-md-2 py-2 border">              
+                    <div class="row">
+                      <div class="col-md-12 col-6">
+                        الرطوبة النسبية (%)
+                      </div>
+                      <div class="col-md-12 col-6 text-right">
+                        <div class="row">
+                          <div class="max col-md-6 col-xs-12 py-1">ليلاً</div>
+                          <div class="min col-md-6 col-xs-12 py-1">نهاراً</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-2 py-2 border">الظواهر</div>
+                  <div class=" col-12 col-md-2 py-2 border"> فرصة الأمطار (%)</div>
+                  <div class=" col-12 col-md-2 py-2 border">اتجاه الرياح</div>
+                  <div class=" col-12 col-md-2 py-2 border">سرعة الرياح (عقدة)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="all_days">
+          <div class="row mb-2 mb-md-0 bg-light text-center border complete_day">
+
+            <div class="title col-2 col-md-3 font-weight-bold text-center text-white bg-primary border-left">
+              <h4 class="py-2">الإثنين 16 نوفمبر 2020</h4>
+            </div>
+            <div class="col-10 col-sm-9">
+              <div class="row">
+                <div class="col-6 col-md-12  d-md-none">
+                  <div class="row bg-primary text-white font-weight-bold">
+                    <div class="temp col-12 col-md-2 py-2 border">
+                      <div class="row">
+                        <div class="col-12">
+                          درجة الحرارة c<sup> ْ</sup>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="humd col-12 py-2 border">              
+                      <div class="row">
+                        <div class="col-12">
+                          الرطوبة النسبية (%)
+                        </div>
+                      </div>
+                    </div>
+                    <div class=" col-12 col-md-2 py-2 border">الظواهر</div>
+                    <div class=" col-12 col-md-2 py-2 border"> فرصة الأمطار (%)</div>
+                    <div class=" col-12 col-md-2 py-2 border">اتجاه الرياح</div>
+                    <div class=" col-12 col-md-2 py-2 border">سرعة الرياح (عقدة)</div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-12">
+                  <div class="row">
+                    <div class="col-12 col-md-2 py-1 border">
+                      <div class="row">
+                        <div class="col-6 text-danger py-1 tmax"></div>
+                        <div class="col-6 text-primary py-1 tmin"></div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-2 py-1 border">
+                      <div class="row">
+                        <div class="col-6 text-info py-1 hmax"></div>
+                        <div class="col-6 text-warning py-1 hmin"></div>
+                      </div>
+                    </div>
+                    <div class=" col-12 col-md-2 py-2 border ph"></div>
+                    <div class=" rain col-12 col-md-2 py-2 border rain"></div>
+                    <div class="wd col-12 col-md-2 py-2 border wd"></div>
+                    <div class="ws col-12 col-md-2 py-2 border ws"></div>
+                  </div>
+                </div>
+                <div class="col-12 py-1 desc">
+                  <p>طقس حار</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-2 mb-md-0 bg-light text-center border complete_day">
+
+            <div class="title col-2 col-md-3 font-weight-bold text-center text-white bg-primary border-left">
+              <h4 class="py-2">الإثنين 16 نوفمبر 2020</h4>
+            </div>
+            <div class="col-10 col-sm-9">
+              <div class="row">
+                <div class="col-6 col-md-12 d-md-none">
+                  <div class="row bg-primary text-white font-weight-bold">
+                    <div class="temp col-12 col-md-2 py-2 border">
+                      <div class="row">
+                        <div class="col-12">
+                          درجة الحرارة (c<sup> ْ</sup>)
+                        </div>
+                      </div>
+                    </div>
+                    <div class="humd col-12 col-md-2 py-2 border">              
+                      <div class="row">
+                        <div class="col-12">
+                          الرطوبة النسبية (%)
+                        </div>
+                      </div>
+                    </div>
+                    <div class=" col-12 col-md-2 py-2 border">الظواهر</div>
+                    <div class=" col-12 col-md-2 py-2 border"> فرصة الأمطار (%)</div>
+                    <div class=" col-12 col-md-2 py-2 border">اتجاه الرياح</div>
+                    <div class=" col-12 col-md-2 py-2 border">سرعة الرياح (عقدة)</div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-12">
+                  <div class="row">
+                    <div class="col-12 col-md-2 py-1 border">
+                      <div class="row">
+                        <div class="col-6 text-danger py-1 tmax"></div>
+                        <div class="col-6 text-primary py-1 tmin"></div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-2 py-1 border">
+                      <div class="row">
+                        <div class="col-6 text-info py-1 hmax"></div>
+                        <div class="col-6 text-warning py-1 hmin"></div>
+                      </div>
+                    </div>
+                    <div class="ph col-12 col-md-2 py-2 border ph"></div>
+                    <div class="rain col-12 col-md-2 py-2 border rain"></div>
+                    <div class="wd col-12 col-md-2 py-2 border wd"></div>
+                    <div class="ws col-12 col-md-2 py-2 border ws">15</div>
+                  </div>
+                </div>
+                <div class="col-12 py-1 desc">
+                  <p></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-2 mb-md-0 bg-light text-center border complete_day">
+
+            <div class="title col-2 col-md-3 font-weight-bold text-center text-white bg-primary border-left">
+              <h4 class="py-2">الإثنين 16 نوفمبر 2020</h4>
+            </div>
+            <div class="col-10 col-sm-9">
+              <div class="row">
+                <div class="col-6 col-md-12  d-md-none">
+                  <div class="row bg-primary text-white font-weight-bold">
+                    <div class="temp col-12 col-md-2 py-2 border">
+                      <div class="row">
+                        <div class="col-md-12">
+                          درجة الحرارة c<sup> ْ</sup>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="humd col-12 col-md-2 py-2 border">              
+                      <div class="row">
+                        <div class="col-md-12">
+                          الرطوبة النسبية (%)
+                        </div>
+                      </div>
+                    </div>
+                    <div class=" col-12 col-md-2 py-2 border">الظواهر</div>
+                    <div class=" col-12 col-md-2 py-2 border"> فرصة الأمطار (%)</div>
+                    <div class=" col-12 col-md-2 py-2 border">اتجاه الرياح</div>
+                    <div class=" col-12 col-md-2 py-2 border">سرعة الرياح (عقدة)</div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-12">
+                  <div class="row">
+                    <div class="col-12 col-md-2 py-1 border">
+                      <div class="row">
+                        <div class="col-6 text-danger py-1 tmax"></div>
+                        <div class="col-6 text-primary py-1 tmin"></div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-2 py-1 border">
+                      <div class="row">
+                        <div class="col-6 text-info py-1 hmax"></div>
+                        <div class="col-6 text-warning py-1 hmin"></div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-2 py-2 border ph"></div>
+                    <div class="col-12 col-md-2 py-2 border rain"></div>
+                    <div class="col-12 col-md-2 py-2 border wd"></div>
+                    <div class="col-12 col-md-2 py-2 border ws"></div>
+                  </div>
+                </div>
+                <div class="col-12 py-1 desc">
+                  <p>طقس حار</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-2 mb-md-0 bg-light text-center border complete_day">
+
+            <div class="title col-2 col-md-3 font-weight-bold text-center text-white bg-primary border-left">
+              <h4 class="py-2">الإثنين 16 نوفمبر 2020</h4>
+            </div>
+            <div class="col-10 col-sm-9">
+              <div class="row">
+                <div class="col-6 col-md-12 d-md-none">
+                  <div class="row bg-primary text-white font-weight-bold">
+                    <div class="temp col-12 col-md-2 py-2 border">
+                      <div class="row">
+                        <div class="col-md-12">
+                          درجة الحرارة c<sup> ْ</sup>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="humd col-12 col-md-2 py-2 border">              
+                      <div class="row">
+                        <div class="col-md-12">
+                          الرطوبة النسبية (%)
+                        </div>
+                        
+                      </div>
+                    </div>
+                    <div class=" col-12 col-md-2 py-2 border">الظواهر</div>
+                    <div class=" col-12 col-md-2 py-2 border"> فرصة الأمطار (%)</div>
+                    <div class=" col-12 col-md-2 py-2 border">اتجاه الرياح</div>
+                    <div class=" col-12 col-md-2 py-2 border">سرعة الرياح (عقدة)</div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-12">
+                  <div class="row">
+                    <div class="col-12 col-md-2 py-1 border">
+                      <div class="row">
+                        <div class="col-6 text-danger py-1 tmax"></div>
+                        <div class="col-6 text-primary py-1 tmin"></div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-2 py-1 border">
+                      <div class="row">
+                        <div class="col-6 text-info py-1 hmax"></div>
+                        <div class="col-6 text-warning py-1 hmin"></div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-2 py-2 border ph"></div>
+                    <div class="col-12 col-md-2 py-2 border rain"></div>
+                    <div class="col-12 col-md-2 py-2 border wd"></div>
+                    <div class="col-12 col-md-2 py-2 border ws"></div>
+                  </div>
+                </div>
+                <div class="col-12 py-1 desc">
+                  <p>طقس حار</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-2 mb-md-0 bg-light text-center border complete_day">
+
+            <div class="title col-2 col-md-3 font-weight-bold text-center text-white bg-primary border-left">
+              <h4 class="py-2">الإثنين 16 نوفمبر 2020</h4>
+            </div>
+            <div class="col-10 col-sm-9">
+              <div class="row">
+                <div class="col-6 col-md-12  d-md-none">
+                  <div class="row bg-primary text-white font-weight-bold">
+                    <div class="temp col-12 col-md-2 py-2 border">
+                      <div class="row">
+                        <div class="col-md-12">
+                          درجة الحرارة c<sup> ْ</sup>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    <div class="humd col-12 col-md-2 py-2 border">              
+                      <div class="row">
+                        <div class="col-md-12">
+                          الرطوبة النسبية (%)
+                        </div>
+                        
+                      </div>
+                    </div>
+                    <div class=" col-12 col-md-2 py-2 border">الظواهر</div>
+                    <div class=" col-12 col-md-2 py-2 border"> فرصة الأمطار (%)</div>
+                    <div class=" col-12 col-md-2 py-2 border">اتجاه الرياح</div>
+                    <div class=" col-12 col-md-2 py-2 border">سرعة الرياح (عقدة)</div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-12">
+                  <div class="row">
+                    <div class="col-12 col-md-2 py-1 border">
+                      <div class="row">
+                        <div class="col-6 text-danger py-1 tmax"></div>
+                        <div class="col-6 text-primary py-1 tmin"></div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-2 py-1 border">
+                      <div class="row">
+                        <div class="col-6 text-info py-1 hmax"></div>
+                        <div class="col-6 text-warning py-1 hmin"></div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-2 py-2 border ph"></div>
+                    <div class="col-12 col-md-2 py-2 border rain"></div>
+                    <div class="col-12 col-md-2 py-2 border wd"></div>
+                    <div class="col-12 col-md-2 py-2 border ws"></div>
+                  </div>
+                </div>
+                <div class="col-12 py-1 desc">
+                  <p>طقس حار</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-2 mb-md-0 bg-light text-center border complete_day">
+
+            <div class="title col-2 col-md-3 font-weight-bold text-center text-white bg-primary border-left">
+              <h4 class="py-2">الإثنين 16 نوفمبر 2020</h4>
+            </div>
+            <div class="col-10 col-sm-9">
+              <div class="row">
+                <div class="col-6 col-md-12  d-md-none">
+                  <div class="row bg-primary text-white font-weight-bold">
+                    <div class="temp col-12 col-md-2 py-2 border">
+                      <div class="row">
+                        <div class="col-md-12">
+                          درجة الحرارة c<sup> ْ</sup>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    <div class="humd col-12 col-md-2 py-2 border">              
+                      <div class="row">
+                        <div class="col-md-12">
+                          الرطوبة النسبية (%)
+                        </div>
+                        
+                      </div>
+                    </div>
+                    <div class=" col-12 col-md-2 py-2 border">الظواهر</div>
+                    <div class=" col-12 col-md-2 py-2 border"> فرصة الأمطار (%)</div>
+                    <div class=" col-12 col-md-2 py-2 border">اتجاه الرياح</div>
+                    <div class=" col-12 col-md-2 py-2 border">سرعة الرياح (عقدة)</div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-12">
+                  <div class="row">
+                    <div class="col-12 col-md-2 py-1 border">
+                      <div class="row">
+                        <div class="col-6 text-danger py-1 tmax"></div>
+                        <div class="col-6 text-primary py-1 tmin"></div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-2 py-1 border">
+                      <div class="row">
+                        <div class="col-6 text-info py-1 hmax"></div>
+                        <div class="col-6 text-warning py-1 hmin"></div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-2 py-2 border ph"></div>
+                    <div class="col-12 col-md-2 py-2 border rain"></div>
+                    <div class="col-12 col-md-2 py-2 border wd"></div>
+                    <div class="col-12 col-md-2 py-2 border ws"></div>
+                  </div>
+                </div>
+                <div class="col-12 py-1 desc">
+                  <p>طقس حار</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+
+<!-- ------------about-us---------- -->
+<section id="about-us" class="mb-5">
+  <div class="container">
+    <h1 class="text-right mb-4">عن الهيئة العامة للأرصاد الجوية</h1>
+    <div class="title-border"></div>
+    <div class="row">
+      <div class="col-md-6">
+        <p class="information" class="mb-3 pb-3 text-ritght"></p>
+        <p class="informationTwo" class="mb-3 pb-3 text-ritght"></p>
+        <button id="read-more" class="btn btn-primary text-right">اقرأ المزيد</button>
+      </div>
+      <div class="col-md-6">
+        <img src="images/1.jpg" class="img-fluid" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- =====================contact========================= -->
+
+<section id="contact" class="contact py-3 my-5 bg-light">
+  <h1 class="text-right font-weight-bold my-5 px-5">تواصل معنا</h1>
+  <div class="container">
+        <form>
+          <div class="row">
+            <div class="col-md-6">
+              <input type="text" class="form-control" placeholder="برجاء كتابة الإسم">
+            </div>
+            <div class="col-md-6">
+              <input type="email" class="form-control" placeholder="برجاء إدخال بريدك الإلكتروني">
+              <small id="emailHelp" class="form-text text-muted text-right">* لن يتم مشاركة بريدك الإكتروني للعامة</small>
+            </div>
+            <div class="col-md-6">
+              <textarea class="form-control" placeholder="اترك رسالتك هنا" rows="3"></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary ml-auto">إرسال</button>
+        </form>
+  </div>
+</section>
+
+
+<!-- ===========================footer================================== -->
+<section id="footer" class="bg-dark pt-3">
+  <div class="container-fluid my-0 py-0">
+    <div class="row text-center">
+      <div class="col-12">
+        <img src="images/logo.png" alt="">
+      </div>
+      <div class="col-12 text-white">
+        <h6>جمهورية مصر العربية</h6>
+        <h6>وزارة الطيران المدني</h6>
+        <h6>الهيئة العامة للأرصاد الجوية بالقاهرة</h6>
+      </div>
+    </div>
+    <div class="border w-25 mx-auto mt-3 mb-5"></div>
+    <div class="container">
+      <div class="row text-center text-md-right text-white">
+        <div class="col-md-3 social-media mb-5 px-5">
+          <h6 class="mb-4">تابعنا على:-</h6>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram-square"></i></a>
+        </div>
+        <div class="col-md-5 address mb-5 px-5">
+          <h6 class="mb-4">تواصل معنا عبر:</h6>
+          <p><i class="fas fa-phone"></i> : <span> 24646719 - 24646721</span></p>
+          <p><i class="fas fa-fax"></i> : <span> 24646714</span></p>
+          <p><i class="fas fa-envelope"></i> : <span> egyptian.met.analysis@gmail.com</span></p>
+          <p><i class="fas fa-map-marker-alt"></i> : <span> الهيئة العامة للأرصاد الجوية - كوبري القبة - القاهرة - جمهورية مصر العربية</span></p>
+        </div>
+        <div class="col-md-4 related-sites px-5">
+          <h6 class="mb-4">مواقع ذات صلة</h6>
+          <div>
+            <a href="https://public.wmo.int/en">وزارة الطيران المدني</a>
+            <a href="https://public.wmo.int/en">المنظمة العالمية للأرصاد الجوية</a>
+            <a href="#">منظمة الطيرات المدني</a>
+            <a href="#">منظومة معلومات الأرصاد-مصر</a>
+            <a href="http://worldweather.met.gov.om:8080/ar/home.html">منظومة معلومات الأرصاد-جنيف</a>
+            <a href="#">موقع البحث العلمي بالهيئة</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copyrights text-center text-white font-weight-bold py-2">
+    <p>Made By <a href="#">ALqiaty</a></p>
+  </div>
+</section>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+    <script>
+      $(".pre-temp").click(function(){
+        $(".temperature").toggle()
+      })
+    </script>
+</body>
+</html>
